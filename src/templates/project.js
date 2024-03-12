@@ -19,14 +19,14 @@ const extractImage = image => {
   }
 };
 
-const extractImages = frontmatter => {
-  try {
-    const images = frontmatter.screenshots.map(imageObj => imageObj.childImageSharp.fluid.src);
-    return images;
-  } catch {
-    return [];
-  }
-};
+// const extractImages = frontmatter => {
+//   try {
+//     const images = frontmatter.screenshots.map(imageObj => imageObj.childImageSharp.fluid.src);
+//     return images;
+//   } catch {
+//     return [];
+//   }
+// };
 
 const ProjectTemplate = ({ data, location }) => {
   if (!data.allMarkdownRemark.edges[0]) {
@@ -36,7 +36,7 @@ const ProjectTemplate = ({ data, location }) => {
 
   const { frontmatter, html } = data.allMarkdownRemark.edges[0].node;
   const { title, description, github, external, thumbnail } = frontmatter;
-  const images = extractImages(frontmatter);
+  const images = [] // extractImages(frontmatter);
 
   return (
     <Layout location={location}>
@@ -104,13 +104,6 @@ export const postQuery = graphql`
           html
           frontmatter {
             title
-            screenshots {
-              childImageSharp {
-                fluid(quality: 100, maxWidth: 1000) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
             tech
             github
             external

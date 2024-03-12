@@ -1,9 +1,9 @@
 # [SpencerLepine.com](https://www.spencerlepine.com/) Portfolio Site
 
 Portfolio site v2 for Spencer Lepine, deployed with [Netlify](https://www.netlify.com/)
- to [spencerlepine.com](https://spencerlepine.com/). Includes a custom-built blog (static posts + hashtags), and functional contact form. View the automated (free) uptime monitor: [portfolio-site-uptime](https://github.com/spencerlepine/portfolio-site-uptime) - and the automated contact form canary: [portfolio-site-contact-form-canary](https://github.com/spencerlepine/portfolio-site-contact-form-canary).
+ to [spencerlepine.com](https://spencerlepine.com/).
 
-[![CI](https://github.com/spencerlepine/spencerlepine.com/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/spencerlepine/spencerlepine.com/actions/workflows/ci.yml) [![Netlify Deploy](https://github.com/spencerlepine/spencerlepine.com/actions/workflows/netlify.yml/badge.svg?branch=master)](https://github.com/spencerlepine/spencerlepine.com/actions/workflows/netlify.yml) [![Link Check](https://github.com/spencerlepine/spencerlepine.com/actions/workflows/link-check.yml/badge.svg?branch=master)](https://github.com/spencerlepine/spencerlepine.com/actions/workflows/link-check.yml) [![Uptime CI](https://github.com/spencerlepine/portfolio-site-uptime/workflows/Uptime%20CI/badge.svg)](https://github.com/spencerlepine/spencerlepine.com-uptime/actions?query=workflow%3A%22Uptime+CI%22) 
+[![CI](https://github.com/spencerlepine/spencerlepine.com/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/spencerlepine/spencerlepine.com/actions/workflows/ci.yml) [![Netlify Deploy](https://github.com/spencerlepine/spencerlepine.com/actions/workflows/netlify.yml/badge.svg?branch=master)](https://github.com/spencerlepine/spencerlepine.com/actions/workflows/netlify.yml) [![Link Check](https://github.com/spencerlepine/spencerlepine.com/actions/workflows/link-check.yml/badge.svg?branch=master)](https://github.com/spencerlepine/spencerlepine.com/actions/workflows/link-check.yml) [![Uptime CI](https://github.com/spencerlepine/portfolio-site-uptime/workflows/Uptime%20CI/badge.svg)](https://github.com/spencerlepine/spencerlepine.com-uptime/actions?query=workflow%3A%22Uptime+CI%22)
 
 ![OG Snapshot](./SCREENRECORDING.gif)
 
@@ -16,6 +16,16 @@ Portfolio site v2 for Spencer Lepine, deployed with [Netlify](https://www.netlif
 - [Netlify](https://www.netlify.com/)
 - [AWS Route53](https://aws.amazon.com/route53/)
 - [HeroTofu](https://herotofu.com/) (Contact Form)
+
+## Features
+
+- **Contact form:** functional contact form forwarding inquires to my personal email (using [HeroTofu](https://herotofu.com/))
+- **Automated CI/CD:** [GitHub Action](https://docs.github.com/en/actions) workflows to automate CI (build/test/lint), image compression pull requests, typo scanning, and Netlify deployment.
+- **Custom Blog:** a custom-built blog (static posts + hashtags) built using Markdown files and [GatsbyJS](https://www.gatsbyjs.com/)
+- **Automated Uptime Monitor:**: free/automated 365/24/7 uptime monitor hosted entirely on GitHub: [portfolio-site-uptime](https://github.com/spencerlepine/portfolio-site-uptime)
+- **Contact Form Canary:**: automated (free) web crawler canary for the contact form, hosted entirely on GitHub: [portfolio-site-contact-form-canary](https://github.com/spencerlepine/portfolio-site-contact-form-canary)
+- **Google Analytics:** free analytics tracking for site usage
+- **Lighthouse CI:** GitHub Actions workflow to run [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) scans for performance + accessibility
 
 ## ⭐ How It's Built
 
