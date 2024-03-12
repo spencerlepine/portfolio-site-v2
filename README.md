@@ -1,14 +1,11 @@
 # [SpencerLepine.com](https://www.spencerlepine.com/) Portfolio Site
 
+Portfolio site v2 for Spencer Lepine, deployed with [Netlify](https://www.netlify.com/)
+ to [spencerlepine.com](https://spencerlepine.com/). Includes a custom-built blog (static posts + hashtags), and functional contact form. View the automated (free) uptime monitor: [portfolio-site-uptime](https://github.com/spencerlepine/portfolio-site-uptime) - and the automated contact form canary: [portfolio-site-contact-form-canary](https://github.com/spencerlepine/portfolio-site-contact-form-canary).
+
 [![CI](https://github.com/spencerlepine/spencerlepine.com/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/spencerlepine/spencerlepine.com/actions/workflows/ci.yml) [![Netlify Deploy](https://github.com/spencerlepine/spencerlepine.com/actions/workflows/netlify.yml/badge.svg?branch=master)](https://github.com/spencerlepine/spencerlepine.com/actions/workflows/netlify.yml) [![Link Check](https://github.com/spencerlepine/spencerlepine.com/actions/workflows/link-check.yml/badge.svg?branch=master)](https://github.com/spencerlepine/spencerlepine.com/actions/workflows/link-check.yml) [![Uptime CI](https://github.com/spencerlepine/portfolio-site-uptime/workflows/Uptime%20CI/badge.svg)](https://github.com/spencerlepine/spencerlepine.com-uptime/actions?query=workflow%3A%22Uptime+CI%22) 
 
-<!-- [![Lighthouse CI](https://github.com/spencerlepine/spencerlepine.com/actions/workflows/lighthouse.yml/badge.svg?branch=master)](https://github.com/spencerlepine/spencerlepine.com/actions/workflows/lighthouse.yml) -->
-
-![OG Snapshot](./static/og@2x.jpg)
-
-## ❓ What Is This?
-
-My personal developer portfolio and blog site.
+![OG Snapshot](./SCREENRECORDING.gif)
 
 ## 📦 Technologies
 
@@ -18,6 +15,7 @@ My personal developer portfolio and blog site.
 - [TailwindCSS](https://tailwindcss.com/)
 - [Netlify](https://www.netlify.com/)
 - [AWS Route53](https://aws.amazon.com/route53/)
+- [HeroTofu](https://herotofu.com/) (Contact Form)
 
 ## ⭐ How It's Built
 
@@ -31,8 +29,8 @@ Using Figma, I created the designs to follow and basic component layout of the s
 
 Head over to the [**status website →**](https://spencerlepine.github.io/portfolio-site-uptime) powered by [Upptime](https://github.com/spencerlepine/portfolio-site-uptime)
 
-
 ## ⚙️ Development Setup
+
 ```sh
 $ git clone https://github.com/spencerlepine/spencerlepine.com.git
 $ cd spencerlepine.com
